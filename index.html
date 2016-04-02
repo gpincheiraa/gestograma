@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Kangoo Gestogram</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,900,700"/>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/font-awesome.css"/>
+		<link rel="stylesheet" href="css/portal_mama.css"/>
+		<link rel="stylesheet" href="css/portal_mama-tablet.css"/>
+		<link rel="stylesheet" href="css/portal_mama-phone.css"/>		
+		<link rel="stylesheet" href="css/gestograma.css"/>
+		<!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" href="http://www.portalmama.com/library/gestograma2/gestograma_ie6.css" />
+		<![endif]-->
+		<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	
+	<body class="preload">
+	
+		<!-- Homepage content -->
+		<div class="container homepage-content">
+			
+			<div class="main-content-column-1">
+				<div id="content" style="float:left;padding-top: 11px;">
+					<div class="title-default" style="text-align: -webkit-auto; text-align: right;">
+						<a href="#" class="active">Gestograma de embarazo</a>
+					</div>
+					<div id="wheelContainer">
+						<div id="wheel">
+							<img id="hoy-image" src="images/hoy-transparent.png" />
+							<img id="wheel-image" src="images/inner-circle.png" />				
+						</div>
+						<div id="wheel-center" >
+							<div id="center-lastMenstrual"></div>
+							<div id="center-dueDate"></div>
+						</div>
+					</div>			
+				</div><!-- /content -->		
+				<div class="clear"></div>	
+			</div>
+			
+			<!-- Sidebar -->
+			<div class="main-sidebar">
+				<div class="widget-tabs">
+					<div class="title-default">
+						<a href="#" class="active">Resultado</a>
+					</div>
+					<div class="resultado-box">
+						<div id="results">
+							<p>
+								<label>Fecha última regla</label><br>
+								<span id="result-fur" class="value"></span>
+							</p>
+							<p>
+								<label>Fecha Actual</label><br>
+								<span id="result-fecha-actual" class="value"></span>
+							</p>	
+							<p>
+								<label>Fecha probable de parto</label><br>
+								<span id="result-parto" class="value"></span>
+							</p>
+							<p>
+								<label>Diámetro biparietal (DBP)</label><br>
+								<span id="result-dbp" class="value">0</span><span class="units">mm</span>
+							</p>
+							<p>
+								<label>Longitud del fémur</label><br>
+								<span id="result-longitud" class="value">0</span><span class="units">mm</span>
+							</p>
+							<p>
+								<label>Peso</label><br>
+								<span id="result-peso" class="value">0</span><span class="units">gr</span>
+							</p>
+							<p>
+								<label>Talla</label><br>
+								<span id="result-talla" class="value">0</span><span class="units">mm</span>
+							</p>
+						</div>
+					</div>	
+				</div>	
+			</div>
+		</div>
+
+		<script>
+			function enviarEncuesta(){
+				document.frmEncuesta.submit();		
+			}
+		</script>
+		<script src="https://apis.google.com/js/plusone.js">{lang: 'es'}</script>
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/jQueryRotate.2.1.js"></script>
+		<script src="js/gestograma.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap-hover-dropdown.js"></script>
+		<script src="js/jquery.particleground.js"></script>
+		<script src="js/jquery.cycle2.min.js"></script>
+		<script src="js/jquery.cycle2.scrollVert.js"></script>
+		<script src="js/jquery.cycle2.swipe.min.js"></script>
+		<script src="js/jquery.hoverintent.min.js"></script>
+		<script src="js/jquery.inview.js"></script>
+		<script src="js/jquery.ui.core.min.js"></script>
+		<script src="js/jquery.ui.effect.min.js"></script>
+		<script src="js/jquery.ui.effect-size.min.js"></script>
+		<script src="js/jquery.ui.effect-slide.min.js"></script>
+		<script src="js/goliath.js"></script>
+		
+		<script>
+			jQuery(document).ready(function() {
+				jQuery ("#wheel-image").rotate(wheelAngle);
+			});
+		</script>
+	
+		
+
+	</body>
+</html>
