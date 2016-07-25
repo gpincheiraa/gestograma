@@ -4,7 +4,7 @@
 	<head>
 		<title>Kangoo Gestogram</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		
 		<link rel="shortcut icon" href="images/favicon.ico">
@@ -26,14 +26,14 @@
 		<!-- Homepage content -->
 		<div class="container homepage-content">
 			
-			<div class="main-content-column-1">
+			<div class="main-content">
 				<div id="content" style="float:left;padding-top: 11px;">
 					<div class="title-default" style="text-align: -webkit-auto; text-align: right;">
 						<a href="#" class="active">Gestograma de embarazo</a>
 					</div>
 					<div id="wheelContainer">
 						<div id="wheel">
-							<img id="hoy-image" src="images/hoy-transparent.png" />
+							<img id="hoy-image" src="images/hoy-transparent.svg" />
 							<img id="wheel-image" src="images/inner-circle.png" />				
 						</div>
 						<div id="wheel-center" >
@@ -112,7 +112,7 @@
 		
 		<script>
 			jQuery(document).ready(function() {
-				jQuery ("#wheel-image").rotate(wheelAngle);
+				jQuery("#wheel-image").rotate(wheelAngle);
 			});
 		</script>
 	
